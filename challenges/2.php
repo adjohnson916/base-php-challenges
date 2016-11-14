@@ -26,10 +26,22 @@ interface AnswerInterface
 
 // start editing here
 
+class Answer implements AnswerInterface {
+  public function get() {
+    return $this;
+  }
+  public function the() {
+    return $this;
+  }
+  public function answer() {
+    return $this;
+  }
+  public function __toString() {
+    return '4';
+  }
+}
 
 // end editing here
 
 $answer = new Answer;
 $question = new Question($answer);
-
-
